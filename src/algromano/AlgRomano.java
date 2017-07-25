@@ -20,12 +20,12 @@ public class AlgRomano {
         int d = (N / 10) % 10;
         int c = (N / 100) % 10;
         int m = N / 1000;
-        JOptionPane.showMessageDialog(null, Mil[m] + Cen[c] + Dec[d] + Un[u]);
+        JOptionPane.showMessageDialog(null, Mil[m] + Cen[c] + Dec[d] + Un[u],"Número em Algarismos Romanos", JOptionPane.PLAIN_MESSAGE);
     }
 
     public static void main(String[] args) {
         while (true) {
-            int x = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o numero:", "NÃºmero atÃ© 9999...", JOptionPane.DEFAULT_OPTION));
+            int x = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o número:", "Número até 9999...", JOptionPane.DEFAULT_OPTION));
             Rom(x);
         }
 
